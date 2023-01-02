@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.col {
+  color: rgb(12, 12, 12);
+}
+
+a:hover {
+  @apply text-primary-900 fill-primary-900;
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*::-moz-selection {
+  background-color: rgb(250, 70, 15);
+}
+
+*::selection {
+  background-color: rgb(250, 70, 15);
+}
+
+@media (max-width: 640px) {
+  #services {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  header .container > a {
+    @apply flex justify-center py-6;
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    @apply mb-24;
+  }
+}/*# sourceMappingURL=main.css.map */

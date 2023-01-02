@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.col{
+   color: rgb(12, 12, 12);
+}
+
+a:hover{
+   @apply text-primary-900 fill-primary-900;
+   transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*::selection{
+   background-color: rgb(250, 70, 15);
+}
+
+
+// mixins
+$phone: 640px;
+
+@mixin phone {
+   @media (max-width: #{$phone}) {
+      @content;
+   }
+}
+
+#services{
+   @include phone {
+      flex-wrap: wrap;
+   }
+}
+
+header{
+   @include phone {
+      .container{
+         > a{
+            @apply flex justify-center py-6
+         }
+      }
+
+   }
+}
+footer{
+   @include phone{
+      @apply mb-24;
+   }
+}
