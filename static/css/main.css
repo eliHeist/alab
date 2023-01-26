@@ -35,4 +35,14 @@ a:hover {
   footer {
     @apply mb-24;
   }
+}
+
+.project_info h2 {
+  @apply text-3xl font-bold mb-4;
+}
+.project_info h3 {
+  @apply text-xs font-bold mt-4;
+}
+.project_info p {
+  @apply text-base text-gray-300;
 }/*# sourceMappingURL=main.css.map */
