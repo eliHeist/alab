@@ -50,12 +50,12 @@ footer{
 
 .project_info{
    h2{
-      @apply text-3xl font-bold mb-4;
+      @apply text-4xl font-black mb-4;
    }
    h3{
-      @apply text-xs font-bold mt-4;
+      @apply text-sm font-bold mt-4;
    }
    p{
-      @apply text-base text-gray-300;
+      @apply text-lg text-gray-300;
    }
 }
