@@ -48,6 +48,13 @@ footer{
    }
 }
 
+.mobile_link{
+   @apply fill-gray-400 text-gray-300;
+   &.active{
+   @apply fill-white text-gray-100;
+   }
+}
+
 .project_info{
    h2{
       @apply text-4xl font-black mb-4;
