@@ -19,10 +19,27 @@ a:hover {
   background-color: rgb(250, 70, 15);
 }
 
+.container {
+  @apply mx-auto px-2;
+}
+
+.lead-1 {
+  @apply mx-auto text-center font-black text-5xl mb-16 uppercase;
+}
+@media (max-width: 640px) {
+  .lead-1 {
+    @apply mb-24;
+  }
+}
+
 @media (max-width: 640px) {
   #services {
     flex-wrap: wrap;
   }
+}
+
+.chat-wrapper {
+  width: clamp(16rem, 10rem + 50vw, 20rem);
 }
 
 @media (max-width: 640px) {
@@ -52,4 +69,33 @@ a:hover {
 }
 .project_info p {
   @apply text-lg text-gray-300;
+}
+.project_info .goal span {
+  @apply bg-gray-800 px-3 py-1 rounded-full text-xs;
+}
+
+.team .lead-1 {
+  @apply mb-4;
+}
+
+.person {
+  @apply relative max-w-[20rem];
+  margin-inline: auto;
+}
+.person_container {
+  @apply aspect-[1/1.3] grid items-end overflow-hidden transition-all duration-300;
+  border-radius: 0 0 100vw 100vw;
+}
+.person_container:hover {
+  @apply scale-110;
+}
+.person_container:hover .person_img {
+  @apply -translate-y-8 scale-125;
+}
+.person .circle {
+  @apply absolute aspect-square object-cover mx-auto rounded-full;
+  inset: auto 0 0;
+}
+.person_img {
+  @apply relative z-[2] scale-125 transition-all duration-300;
 }/*# sourceMappingURL=main.css.map */
